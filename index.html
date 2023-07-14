@@ -8,6 +8,9 @@
     
   
     <style>
+        .Layout-pactice{
+        text-align: center;
+        }
         nav a{
                 text-decoration: none;
                 color: black;
@@ -15,6 +18,11 @@
             nav{
                 display: flex;
                 justify-content: space-between;
+                background-color: aqua;
+            }
+            .menu{
+                margin-left: 10px;
+                padding-left: 5px;
             }
     </style>
     <style>
@@ -90,21 +98,38 @@
         }
     }
 </style>
+<style>
+    .resposive {
+        text-align: center;
+    
+    }
+</style>
+<style>
+    .footer{
+        text-align: center;
+        background-color: aqua;
+    }
+    .sp{
+        color: red;
+    }
+</style>
 </head>
 <body>
-   <h2>Flexbox Layout</h2> 
 
-   <nav>
-    <div>
-    <a href="">blog </a>
-    <a href="">profile</a>
-    <a href="">instagarm</a>
+   <h2 class="Layout-pactice">Flexbox Layout</h2> 
+    <h1 class="resposive">justify-content:space-between</h1>
+   <nav class="nav">
+    <div class="menu">
+    <a href="">Blog </a>
+    <a href="">Profile</a>
+    <a href="">About</a>
    
 </div>
-<a href="">login</a>
+<a href="">Login</a>
    </nav>
-
+   <h1 class="resposive">Flexbox Layout</h1>
    <section class="login-form-container">
+            
    <form class="login-form" >
     <h3>Please Login</h3>
     <input type="email" placeholder="your email" required>
@@ -112,7 +137,8 @@
     <input type="login" value="Login" required>
    </form>
 </section>
-
+<br><br>
+            <h1 class="resposive">grid-template-columns</h1>
 <div class="containergd">
     <div class="item">item - 1</div>
     <div class="item">item - 2</div>
@@ -139,7 +165,7 @@
 
 <br>
 <br>
-
+            <h1 class="resposive"> Calander</h1>
 <div class="calander">
 <div class="day">s</div>
 <div class="day">m</div>
@@ -183,7 +209,9 @@
   
 </div>
 <!--Food Images-->
-
+    <br>
+    <br>
+    <h1 class="resposive">Responsive website practice</h1>
 <div class="container">
     <div class="food">
         <img class="Food-img" src="Food-img.jpg" alt="">
@@ -259,5 +287,10 @@
     </div>
 </div>
 </div>
+<footer>
+    <div class="footer">
+        <h4>Tarikh 13.05.23///Named:Som<span class="sp">Ra</span>t MaSud</h4>
+    </div>
+</footer>
 </body>
 </html>
