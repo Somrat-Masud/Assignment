@@ -3,10 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Flexbox</title>
     <link rel="stylesheet" href="style.css">
+    
+  
+    <style>
+        nav a{
+                text-decoration: none;
+                color: black;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+    </style>
+    <style>
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 2px solid violet;
+        }
+        .login-form input{
+            margin-top: 20px;
+        }
+       
+    </style>
+    <style>
+         .containergd{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .item{ 
+            border: 1px solid;
+        }
+    </style>
+<style>
+     .calander {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        row-gap: 20px;
+        column-gap: 10px;
+
+     }
+     .date, .day{
+        justify-content: center;
+        display: flex;
+        background-color: aqua;
+        border-radius: 5px;
+        height: 50-px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+     }
+</style>
+
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        
+    }
+    .food{
+        border: 1px solid aqua;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .Food-img{
+        width: 100%;
+    }
+    @media screen and  (max-width:576px){
+    .container {
+        grid-template-columns: repeat (1, 1fr);
+    }
+    }
+        
+    @media screen and(min-width:577px;) and (max-width:992) {
+        .container{
+            grid-template-columns: repeat(2, 2fr);
+        }
+    }
+</style>
 </head>
 <body>
-    
+   <h2>Flexbox Layout</h2> 
+
+   <nav>
+    <div>
+    <a href="">blog </a>
+    <a href="">profile</a>
+    <a href="">instagarm</a>
+   
+</div>
+<a href="">login</a>
+   </nav>
+
+   <section class="login-form-container">
+   <form class="login-form" >
+    <h3>Please Login</h3>
+    <input type="email" placeholder="your email" required>
+    <input type="password" name="" id="" placeholder="password" required>
+    <input type="login" value="Login" required>
+   </form>
+</section>
+
+<div class="containergd">
+    <div class="item">item - 1</div>
+    <div class="item">item - 2</div>
+    <div class="item">item - 3</div>
+    <div class="item">item - 4</div>
+    <div class="item">item - 5</div>
+    <div class="item">item - 6</div>
+    <div class="item">item - 7</div>
+    <div class="item">item - 8</div>
+    <div class="item">item - 9</div>
+    <div class="item">item - 10</div>
+    <div class="item">item - 11</div>
+    <div class="item">item - 12</div>
+    <div class="item">item - 13</div>
+    <div class="item">item - 14</div>
+    <div class="item">item - 15</div>
+    <div class="item">item - 16</div>
+    <div class="item">item - 17</div>
+    <div class="item">item - 18</div>
+    <div class="item">item - 19</div>
+    <div class="item">item - 20</div>
+
+</div>
+
+<br>
+<br>
+
+<div class="calander">
+<div class="day">s</div>
+<div class="day">m</div>
+<div class="day">t</div>
+<div class="day">w</div>
+<div class="day">t</div>
+<div class="day">f</div>
+<div class="day">s</div>
+
+    <div class="date">1</div>
+    <div class="date">2</div>
+    <div class="date">3</div>
+    <div class="date">4</div>
+    <div class="date">5</div>
+    <div class="date">6</div>
+    <div class="date">7</div>
+    <div class="date">8</div>
+    <div class="date">9</div>
+    <div class="date">10</div>
+    <div class="date">11</div>
+    <div class="date">12</div>
+    <div class="date">13</div>
+    <div class="date">14</div>
+    <div class="date">15</div>
+    <div class="date">16</div>
+    <div class="date">17</div>
+    <div class="date">18</div>
+    <div class="date">19</div>
+    <div class="date">20</div>
+    <div class="date">21</div>
+    <div class="date">22</div>
+    <div class="date">23</div>
+    <div class="date">24</div>
+    <div class="date">25</div>
+    <div class="date">26</div>
+    <div class="date">27</div>
+    <div class="date">28</div>
+    <div class="date">29</div>
+    <div class="date">30</div>
+    <div class="date">31</div>
+  
+</div>
+<!--Food Images-->
+
+<div class="container">
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -1</h3>
+        <p>price: $1100</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis porro molestiae eos harum consectetur omnis ab minus in expedita!</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -2</h3>
+        <p>price: $2100</p>
+        <p>Omnis eum at non corrupti perspiciatis ratione minima alias earum quidem, cumque laudantium officiis nulla illum laboriosam obcaecati eligendi similique!</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -3</h3>
+        <p>price: $3100</p>
+        <p>Nihil provident sit quibusdam a animi nemo inventore facere? Velit eos placeat veniam iusto suscipit eligendi exercitationem atque excepturi nemo.</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -4</h3>
+        <p>price: $4100</p>
+        <p>Repudiandae a suscipit, similique velit saepe fuga reprehenderit soluta? Quidem optio rerum totam dolorum mollitia assumenda quam officia provident esse?</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -5</h3>
+        <p>price: $5100</p>
+        <p>Assumenda maxime deserunt atque sequi nemo qui quaerat a repudiandae itaque ea in sunt corrupti ipsam, eveniet ut quod aut.</p>
+    </div>
+    <div class="food">
+        <img  class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -6</h3>
+        <p>price: $6100</p>
+        <p>Similique temporibus provident, repudiandae asperiores maiores molestiae esse facere consequatur excepturi sint quam amet iste animi aut, exercitationem voluptatibus pariatur.</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -7</h3>
+        <p>price: $7100</p>
+        <p>Iusto quod magni maiores unde dolor! Sunt non voluptas voluptatem veritatis aut aliquam neque facere provident voluptatum commodi! Nam, perspiciatis.</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -8</h3>
+        <p>price: $8100</p>
+        <p>Perferendis corporis ab vel voluptates quis porro vitae officia, optio distinctio. Voluptatem illum harum eaque vero inventore quasi officiis amet.</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -9</h3>
+        <p>price: $9100</p>
+        <p>Laudantium eligendi nesciunt ipsum dolore sint deserunt earum dolorem accusamus voluptate molestias cumque, quaerat tempore delectus quisquam laboriosam, aperiam aspernatur?</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -10</h3>
+        <p>price: $10100</p>
+        <p>Officia eius non ducimus iusto accusamus cum magni ratione quae dolores beatae, architecto debitis eveniet recusandae incidunt eum voluptatum ea.</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -11</h3>
+        <p>price: $11100</p>
+        <p>Consequatur animi modi qui saepe enim perferendis molestias totam reprehenderit? Rem autem totam tenetur facilis possimus nam, esse iure magnam.</p>
+    </div>
+    <div class="food">
+        <img class="Food-img" src="Food-img.jpg" alt="">
+        <h3>food item -12</h3>
+        <p>price: $12100</p>
+        <p>Perferendis corporis, doloribus, voluptatibus beatae consectetur fuga sunt ducimus sint reprehenderit tenetur nihil ab sed aspernatur dicta tempora dolores voluptatum!</p>
+    </div>
+</div>
+</div>
 </body>
 </html>
